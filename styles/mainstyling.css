@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(110, 135, 87);
+  min-height: 1000px;
+}
+
+body * {
+  color: gold;
+}
+
+.flagship-container > div {
+  justify-content: center;
+}
+
+/* .flagship-container > div > div > img {
+  max-height: 50vh;
+  object-fit: cover;
+} */
+
+.full-capture {
+  height: 90vh;
+  background-image: url("../images/tortelinni's.jpg");
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(4, 71, 4);
+}
+
+.transparent-bg {
+  background-color: rgba(128, 128, 128, 0.5);
+  padding-top: 10px;
+  border-radius: 5px;
+  height: 40%;
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-btn {
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  .transparent-bg {
+    height: 70%;
+    width: 80%;
+  }
+}
+
+.carousel {
+  height: 50vh;
+}
+
+.carousel-item {
+  height: 300px;
+  object-fit: cover;
+}
+
+.contact-container {
+  padding: 25px;
+}
+
+.links-container {
+  padding-block: 5px;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+a {
+  color: black;
+}
+h2 {
+  text-align: center;
+}

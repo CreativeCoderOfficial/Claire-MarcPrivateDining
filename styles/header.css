@@ -1,0 +1,26 @@
+nav {
+  background-color: rgb(110, 135, 87);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+  color: gold;
+}
+
+.nav-link {
+  color: gold;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 5px;
+}
+
+.header-contact-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-contact-icons img {
+  height: 25px;
+}
