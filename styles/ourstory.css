@@ -1,0 +1,86 @@
+.expertteam-container {
+  /* background-color: #095d40;*/
+  width: 100%;
+  height: 92vh;
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  grid-template-rows: repeat(100, 1fr);
+}
+
+.image-team {
+  background-image: url("../images/ClaireInstaProfile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: blueviolet;
+  grid-area: 10 / 5 / 85 / 65;
+}
+
+@media (min-width: 1500px) {
+  .image-team {
+    background-position: center calc(40%);
+  }
+}
+
+.intro-container {
+  background-color: #5c413f;
+  grid-area: 40 / 50 / 95 / 95;
+}
+
+.intro-container h3 {
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.intro-container p {
+  padding-left: 1rem;
+  font-size: x-large;
+}
+
+@media (601px < width < 885px) {
+  .intro-container p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-container h3 {
+    padding-top: 5px;
+    font-size: 30px;
+  }
+
+  .intro-container p {
+    font-size: 15px;
+  }
+}
+
+.about-container {
+  padding-top: 10vh;
+  width: auto;
+  height: 100vh;
+  padding-left: 5vw;
+}
+
+.title-container {
+  width: 100%;
+  height: 10vh;
+  display: block;
+  z-index: 1;
+  margin-left: -1.75vw;
+}
+
+.title-container h3 {
+  z-index: 1;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  gap: 5vh;
+  background-color: #5c413f;
+}
+
+.about-text p {
+  font-size: x-large;
+}
