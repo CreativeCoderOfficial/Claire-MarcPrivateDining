@@ -1,6 +1,5 @@
 body {
   background-color: rgb(54, 94, 50);
-  min-height: 1000px;
 }
 
 /* colortheme link: https://colorhunt.co/palette/1235243e7b2785a947efe3c2 */
@@ -18,18 +17,16 @@ body * {
   object-fit: cover;
 } */
 
-.carousel {
-  height: 50vh;
-}
-
-.carousel-item {
-  height: 300px;
-  object-fit: cover;
-}
-
 a {
   color: black;
 }
 h2 {
   text-align: center;
+}
+
+footer {
+  border-top: 1px solid #eeba2b;
+  position: body-end;
+  bottom: 0;
+  width: 100%;
 }
