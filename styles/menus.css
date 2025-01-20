@@ -1,0 +1,123 @@
+/* Base styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  margin-bottom: 3rem; /* Increased spacing between menu items */
+}
+
+.menu-item h2 {
+  font-size: 2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+/* Slightly larger for the course name */
+.menu-item p:first-of-type {
+  font-size: 1.4rem; /* Slightly larger text */
+  margin-bottom: 0.5rem;
+}
+
+/* Smaller, italicized description text */
+.menu-item p:nth-of-type(2) {
+  font-size: 1.1rem; /* Slightly smaller text */
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.dish-name {
+  font-size: 1.4rem; /* Slightly larger text */
+  margin-bottom: 0.5rem;
+}
+
+.dish-description {
+  font-size: 1.1rem; /* Slightly smaller text */
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Responsive text scaling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .menu-item h2 {
+    font-size: 1.75rem;
+  }
+
+  .menu-item p:first-of-type {
+    font-size: 1.3rem;
+  }
+
+  .menu-item p:nth-of-type(2) {
+    font-size: 1rem;
+  }
+
+  .dish-name {
+    font-size: 1.3rem;
+  }
+
+  .dish-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .menu-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .menu-item p:first-of-type {
+    font-size: 1.2rem;
+  }
+
+  .menu-item p:nth-of-type(2) {
+    font-size: 0.9rem;
+  }
+
+  .dish-name {
+    font-size: 1.2rem;
+  }
+
+  .dish-description {
+    font-size: 0.9rem;
+  }
+}
+
+#return-btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-style: none;
+  cursor: pointer;
+}

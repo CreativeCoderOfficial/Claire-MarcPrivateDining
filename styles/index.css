@@ -11,7 +11,7 @@
 }
 
 .transparent-bg {
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(54, 94, 50, 1);
   padding-top: 10px;
   border-radius: 5px;
   height: 40%;
@@ -42,7 +42,7 @@
 .feature-content {
   height: 500px;
   padding: 1rem;
-  background-color: rgb(129, 162, 99);
+  background-color: rgb(9, 93, 64);
   text-align: center;
 }
 
@@ -109,4 +109,14 @@
 
 .instagram-feed-item > div p {
   font-size: 20px;
+}
+
+.menucard-option {
+  border: 1px solid rgb(231, 211, 127);
+  background-color: rgb(9, 93, 64);
+}
+
+.feature-content div h3 {
+  font-size: 35px;
+  margin-bottom: 0;
 }

@@ -8,7 +8,7 @@
 }
 
 .image-team {
-  background-image: url("../images/ClaireInstaProfile.jpg");
+  background-image: url("../images/IMG-20250119-WA0020.jpg");
   background-size: cover;
   background-position: center;
   background-color: blueviolet;
@@ -22,7 +22,7 @@
 }
 
 .intro-container {
-  background-color: #5c413f;
+  background-color: rgb(9, 93, 64);
   grid-area: 40 / 50 / 95 / 95;
 }
 
@@ -78,7 +78,7 @@
   justify-content: space-around;
   align-items: start;
   gap: 5vh;
-  background-color: #5c413f;
+  background-color: #095d40;
 }
 
 .about-text p {
