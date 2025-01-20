@@ -21,13 +21,14 @@
     height: auto;
     width: 200%;
     object-fit: cover;
-    object-position: right;
   }
 }
 
-@media (min-width: 1500px) {
-  .image-team {
-    background-position: center calc(40%);
+@media (min-width: 1200px) {
+  .image-team img {
+    width: 100%;
+    object-fit: contain;
+    object-position: 50% 0%;
   }
 }
 
