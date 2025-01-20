@@ -8,11 +8,21 @@
 }
 
 .image-team {
-  background-image: url("../images/IMG-20250119-WA0020.jpg");
-  background-size: cover;
-  background-position: center;
-  background-color: blueviolet;
   grid-area: 10 / 5 / 85 / 65;
+}
+
+.image-team img {
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 400px) {
+  .image-team img {
+    height: auto;
+    width: 200%;
+    object-fit: cover;
+    object-position: right;
+  }
 }
 
 @media (min-width: 1500px) {
