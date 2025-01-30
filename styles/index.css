@@ -23,6 +23,50 @@
   align-items: center;
 }
 
+h1 {
+  font-size: 2.5rem; /* Increased base size for dominance */
+  margin-bottom: 0;
+}
+
+.transparent-bg p {
+  font-size: 1.5rem; /* Slightly larger base size */
+  margin-bottom: 0;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 992px) {
+  /* For tablets */
+  h1 {
+    font-size: 2.2rem; /* Still large but slightly reduced */
+  }
+
+  .transparent-bg p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For mobile landscape */
+  h1 {
+    font-size: 2rem; /* Keep h1 visually dominant */
+  }
+
+  .transparent-bg p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* For mobile portrait */
+  h1 {
+    font-size: 1.8rem; /* Text remains prominent for small screens */
+  }
+
+  .transparent-bg p {
+    font-size: 1.2rem;
+  }
+}
+
 .contact-btn {
   margin-left: 10px;
   margin-bottom: 15px;
@@ -35,10 +79,6 @@
   }
 }
 
-.ownline {
-  width: 100%;
-}
-
 .feature-content {
   height: 500px;
   padding: 1rem;
@@ -47,7 +87,7 @@
 }
 
 .feature-content div > ul > li {
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 
 .list-container {
