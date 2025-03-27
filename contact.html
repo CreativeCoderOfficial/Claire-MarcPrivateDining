@@ -56,6 +56,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="./ourstory.html">About</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reviews.html">Reviews</a>
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -127,38 +130,103 @@
     </header>
 
     <div class="contact-container">
-      <h2>Contact Us</h2>
-      <p>
-        Thank you for your interest in our private dining events. Please feel
-        free to contact us with any enquiries, and we will get back to you as
-        soon as possible.
-      </p>
+      <div id="contact-info-container">
+        <h2>Contact Us</h2>
+        <p>
+          Thank you for your interest in our private dining events. Please feel
+          free to contact us with any enquiries, and we will get back to you as
+          soon as possible.
+        </p>
 
-      <p>Kindest regards,</p>
-      <p>Claire and Marc Lara</p>
+        <p>Kindest regards,</p>
+        <p>Claire and Marc Lara</p>
 
-      <div class="links-container">
-        <div class="contact-row">
-          <img
-            src="./icons/mail-envelope.svg"
-            alt="mailenvelope icon"
-            style="height: 28px"
-          />
-          Send us an email at:
-          <a href="mailto:claire.chef@gmail.com"> claire.chef@gmail.com</a>
+        <div class="links-container">
+          <div class="contact-row">
+            <img
+              src="./icons/mail-envelope.svg"
+              alt="mailenvelope icon"
+              style="height: 28px"
+            />
+            Send us an email at:
+            <a href="mailto:claire.chef@gmail.com"> claire.chef@gmail.com</a>
+          </div>
+
+          <div class="contact-row">
+            <img
+              src="./icons/instagram.svg"
+              alt="instagram icon"
+              style="height: 24px"
+            />
+            Visit our instagram page:
+            <a href="https://www.instagram.com/claireandmarcprivatedining/"
+              >claireandmarcprivatedining</a
+            >
+          </div>
         </div>
+      </div>
 
-        <div class="contact-row">
-          <img
-            src="./icons/instagram.svg"
-            alt="instagram icon"
-            style="height: 24px"
+      <div id="form-container">
+        <h3>Enquire for a private dining event.</h3>
+        <hr />
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- Replace with your Access Key -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="5cb6d182-7087-455c-931f-27218845927d"
           />
-          Visit our instagram page:
-          <a href="https://www.instagram.com/claireandmarcprivatedining/"
-            >claireandmarcprivatedining</a
-          >
-        </div>
+
+          <!-- Form Inputs. Each input must have a name="" attribute -->
+          <h4>Name</h4>
+          <input type="text" name="name" placeholder="name" required />
+          <h4>Email</h4>
+          <input type="email" name="email" placeholder="email" required />
+
+          <h4>Date of event</h4>
+          <input type="date" name="date of event" />
+
+          <h4>Number of guests</h4>
+          <input
+            type="number"
+            placeholder="4"
+            name="number of guests"
+            required
+          />
+
+          <h4>Location</h4>
+          <input
+            type="text"
+            name="location"
+            placeholder="*include your postcode"
+            required
+          />
+
+          <h4>Message</h4>
+          <textarea
+            name="message"
+            placeholder="Feel free to mention any allergies or food preferences."
+            required
+          ></textarea>
+
+          <!-- Honeypot Spam Protection -->
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+
+          <!-- Custom Confirmation / Success Page -->
+          <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+          <button type="submit" id="form-submit-btn">Submit Form</button>
+        </form>
       </div>
     </div>
 
@@ -183,10 +251,13 @@
               <a href="./index.html" class="nav-link px-2">Home</a>
             </li>
             <li class="nav-item">
-              <a href="./index.html#menus" class="nav-link px-2">Services</a>
+              <a href="#menus" class="nav-link px-2">Services</a>
             </li>
             <li class="nav-item">
               <a href="./ourstory.html" class="nav-link px-2">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./reviews.html" class="nav-link px-2">Reviews</a>
             </li>
           </ul>
         </footer>
