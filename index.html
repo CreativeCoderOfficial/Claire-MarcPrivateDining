@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/mainstyling.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/reviews.css">
     <style>
 
     .eb-garamond-font {
@@ -35,6 +36,7 @@
       object-fit: cover;
     }
 
+
     </style>
   </head>
 
@@ -43,8 +45,8 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"
-            ><img src="./icons/chef-hat-simple.svg" /> Claire & Marc Private
-            Dining</a
+            ><img src="./icons/chef-hat-simple.svg" /> Claire & Marc
+            Private Dining</a
           >
           <button
             class="navbar-toggler"
@@ -62,6 +64,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="./ourstory.html">About</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reviews.html">Reviews</a>
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -73,14 +78,36 @@
                   Services
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./breakfast.html">Breakfast</a></li>
-                  <li><a class="dropdown-item" href="./casualdining.html">Casual Dining / Lunch</a></li>
-                  <li><a class="dropdown-item" href="./sharingforthetable.html">Sharing for the Table</a></li>
-                  <li><a class="dropdown-item" href="./finedining.html">Fine Dining</a></li>
-                  <li><a class="dropdown-item" href="./tastingmenu.html">Tasting Menus</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./breakfast.html"
+                      >Breakfast</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./casualdining.html"
+                      >Casual Dining / Lunch</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./sharingforthetable.html"
+                      >Sharing for the Table</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./finedining.html"
+                      >Fine Dining</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./tastingmenu.html"
+                      >Tasting Menus</a
+                    >
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="./contact.html">Bespoke requests</a>
+                    <a class="dropdown-item" href="./contact.html"
+                      >Bespoke requests</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -146,7 +173,7 @@
     <section id="whatwedo">
       <div class="container px-4 py-5" >
         <h2 class="display-3 lh-1" style="border-bottom: 0.1px solid gold; padding-bottom: 10px;">What we do</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div class="row g-4 py-5 row-cols-1 row-cols-sm-2 row-cols-lg-4">
         <div class="col align-items-start">
           <div class="feature-content">
             <div>
@@ -275,6 +302,24 @@
       </div>
     </section>
 
+    <section id="testimonial">
+      <div class="my-5">
+        <div class="p-5 text-center bg-body-tertiary articles-container">
+          <div class="container py-5 border border-4  rounded" >
+            
+            <h2 class="text-body-emphasis mb-5">Participant of the Coronation Dish</h1>
+          
+            <img  class="rounded-circle mb-2" style="height: 100px;" src="./images/BBC-Logo.jpg" alt="Dog">
+  
+  
+            <a href="./reviews.html" class="btn btn-outline-dark btn-lg">Read more about our reviews, ratings & articles <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg> <a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="photos">
       <div class="carousel-container container ">
         <h2>View our wonderful food gallery</h2>
@@ -326,6 +371,7 @@
       </div>
     </section>
 
+    
     <section id="footer">
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
@@ -339,16 +385,17 @@
             <li class="nav-item"><a href="./index.html" class="nav-link px-2 ">Home</a></li>
             <li class="nav-item"><a href="#menus" class="nav-link px-2 ">Services</a></li>
             <li class="nav-item"><a href="./ourstory.html" class="nav-link px-2 ">About</a></li>
+            <li class="nav-item"><a href="./reviews.html" class="nav-link px-2 ">Reviews</a></li>         
           </ul>
         </footer>
       </div>
     </section>
-
+  
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
     <script>
       const myCarouselElement = document.querySelector('#carouselExampleIndicators')
 
