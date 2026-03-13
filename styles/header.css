@@ -5,15 +5,20 @@ nav {
 
 .navbar-brand {
   color: #eeba2b;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Chef hat SVG inherits gold from .navbar-brand color via currentColor */
+.nav-chef-hat {
+  height: 40px;
+  width: 40px;
+  flex-shrink: 0;
 }
 
 .nav-link {
   color: #eeba2b;
-}
-
-.navbar-brand img {
-  height: 40px;
-  margin-right: 5px;
 }
 
 .header-contact-icons {
@@ -21,6 +26,23 @@ nav {
   align-items: center;
   gap: 10px;
 }
-.header-contact-icons img {
-  height: 25px;
+
+/* Contact button: vertically centred with the icons beside it */
+.header-contact-icons a.btn {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  padding: 0.35rem 0.75rem;
+}
+
+/* Icon links: colour the inlined SVGs gold via currentColor */
+.nav-icon-link {
+  color: #eeba2b;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.nav-icon-link:hover {
+  color: #fff;
 }

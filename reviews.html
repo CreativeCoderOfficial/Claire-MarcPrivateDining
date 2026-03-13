@@ -3,26 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-
+    <title>Reviews - Claire & Marc Private Dining</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/mainstyling.css" />
-    <link rel="stylesheet" href="./styles/contact.css" />
-    <link rel="stylesheet" href="./styles/reviews.css">
     <style>
       .eb-garamond-font {
         font-family: "EB Garamond", serif;
@@ -31,206 +18,272 @@
         font-style: normal;
       }
 
+      /* ── Hero ── */
+      .reviews-hero {
+        background-color: #095d40;
+        padding: 5rem 1.5rem 3.5rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(238, 186, 43, 0.3);
+      }
+      .reviews-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #eeba2b;
+        margin-bottom: 1rem;
+      }
+      .reviews-hero p {
+        font-size: 1.2rem;
+        color: #eeba2b;
+        opacity: 0.85;
+        font-style: italic;
+        margin: 0;
+      }
+      .gold-divider {
+        width: 80px;
+        height: 2px;
+        background-color: #eeba2b;
+        margin: 1.5rem auto;
+        opacity: 0.6;
+      }
+
+      /* ── BBC Feature strip ── */
+      .bbc-strip {
+        background-color: #095d40;
+        border: 1px solid rgba(238, 186, 43, 0.35);
+        border-radius: 12px;
+        padding: 2.5rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3rem auto;
+        max-width: 800px;
+      }
+      .bbc-strip img {
+        height: 70px;
+        border-radius: 5px;
+        flex-shrink: 0;
+      }
+      .bbc-strip-text h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #eeba2b;
+        margin-bottom: 0.4rem;
+      }
+      .bbc-strip-text p {
+        font-size: 1.05rem;
+        color: #eeba2b;
+        opacity: 0.85;
+        margin: 0;
+        font-style: italic;
+      }
+      .bbc-strip-text a {
+        display: inline-block;
+        margin-top: 0.75rem;
+        color: #eeba2b;
+        font-size: 0.9rem;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .bbc-strip-text a:hover { opacity: 0.75; }
+
+      /* ── Review grid ── */
+      .reviews-section {
+        padding: 1rem 1.5rem 4rem;
+      }
+      .review-card {
+        background-color: #095d40;
+        border: 1px solid rgba(238, 186, 43, 0.35);
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+      }
+      .review-card .quote-mark {
+        font-size: 4rem;
+        line-height: 1;
+        color: #eeba2b;
+        opacity: 0.3;
+        font-family: Georgia, serif;
+        margin-bottom: -1rem;
+      }
+      .review-card h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #eeba2b;
+        margin-bottom: 1rem;
+      }
+      .review-card p {
+        font-size: 1.05rem;
+        line-height: 1.75;
+        color: #eeba2b;
+        opacity: 0.9;
+        flex-grow: 1;
+        font-style: italic;
+      }
+      .review-card .reviewer {
+        margin-top: 1.25rem;
+        font-size: 0.95rem;
+        color: #eeba2b;
+        opacity: 0.65;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+      }
+      .review-stars {
+        color: #eeba2b;
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+      }
+
+      /* ── CTA strip ── */
+      .reviews-cta {
+        background-color: #095d40;
+        border-top: 1px solid rgba(238, 186, 43, 0.25);
+        border-bottom: 1px solid rgba(238, 186, 43, 0.25);
+        padding: 3rem 1.5rem;
+        text-align: center;
+      }
+      .reviews-cta h3 {
+        font-size: 1.8rem;
+        color: #eeba2b;
+        margin-bottom: 0.75rem;
+      }
+      .reviews-cta p {
+        color: #eeba2b;
+        opacity: 0.85;
+        max-width: 500px;
+        margin: 0 auto 1.5rem;
+      }
+      .btn-gold {
+        background-color: #eeba2b;
+        color: #095d40;
+        border: 2px solid #eeba2b;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+      }
+      .btn-gold:hover {
+        background-color: transparent;
+        color: #eeba2b;
+        border-color: #eeba2b;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(238, 186, 43, 0.35);
+      }
     </style>
   </head>
 
   <body class="eb-garamond-font">
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"
-            ><img src="./icons/chef-hat-simple.svg" /> Claire & Marc
-            Private Dining</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="./ourstory.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./reviews.html">Reviews</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./breakfast.html"
-                      >Breakfast</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./casualdining.html"
-                      >Casual Dining / Lunch</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./sharingforthetable.html"
-                      >Sharing for the Table</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./finedining.html"
-                      >Fine Dining</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./tastingmenu.html"
-                      >Tasting Menus</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="./contact.html"
-                      >Bespoke requests</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
+    <header id="nav-placeholder"></header>
 
-            <div class="header-contact-icons">
-              <a
-                href="./contact.html"
-                class="nav-link btn btn-outline-secondary"
-              >
-                Contact
-              </a>
+    <!-- Hero -->
+    <section class="reviews-hero">
+      <h1>Reviews</h1>
+      <div class="gold-divider"></div>
+      <p>What our guests say about their experience</p>
+    </section>
 
-              <a href="https://www.instagram.com/claireandmarcprivatedining/"
-                ><img src="./icons/instagram.svg" alt="instagram icon"
-              /></a>
+    <div class="container">
 
-              <a href="mailto:claire.chef@gmail.com"
-                ><img
-                  src="./icons/mail-envelope.svg"
-                  alt="mailenvelope icon"
-                  style="height: 28px"
-              /></a>
+      <!-- BBC Feature -->
+      <div class="bbc-strip">
+        <img src="./images/BBC-Logo.jpg" alt="BBC Logo" />
+        <div class="bbc-strip-text">
+          <h2>Featured on the BBC Coronation Dish</h2>
+          <p>Claire Lara was selected to cook as part of the King's coronation celebrations.</p>
+          <a href="https://www.bbc.co.uk/programmes/articles/SCqYykZ7BffYvTNL9WC5d3/the-coronation-dish" target="_blank" rel="noopener noreferrer">Read the BBC feature →</a>
+        </div>
+      </div>
+
+      <!-- Review Cards -->
+      <section class="reviews-section">
+        <div class="row g-4">
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review-card">
+              <div class="quote-mark">"</div>
+              <h3>Everything was perfect.</h3>
+              <p>We had a lovely time with Claire & Marc. Both meals were excellent with some of the best food we have had for ages. The weather wasn't helpful, snow and flooding but they arrived on time and left everything perfect. Thank you again for an excellent experience!</p>
+              <div class="review-stars">★★★★★</div>
+              <div class="reviewer">— Lindsay</div>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
-  
 
-
-  <section id="articles" class="articles-container text-center">
-
-          <h2>Featured on the BBC Coronation Dish</h2>
-          <div class="row placer">
-            <div class="col-sm-12 col-lg-3">
-              <a href="https://www.bbc.co.uk/programmes/articles/SCqYykZ7BffYvTNL9WC5d3/the-coronation-dish">
-                <img src="./images/BBC-Logo.jpg" alt="">
-              </a>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review-card">
+              <div class="quote-mark">"</div>
+              <h3>Bespoke Services</h3>
+              <p>Claire and Marc were great. They came 2 hours before, cooked a lovely meal and without being asked did Alfie our dog a chicken dinner. They washed up and cleared away. We did nothing but enjoy ourselves.</p>
+              <div class="review-stars">★★★★★</div>
+              <div class="reviewer">— Google Review</div>
             </div>
+          </div>
 
-  </section>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review-card">
+              <div class="quote-mark">"</div>
+              <h3>Helpful, Professional and Efficient.</h3>
+              <p>Claire and Marc were terrific! The food was delicious and they were so helpful, professional and efficient. I have never seen the kitchen so clean! We all had a lovely time. Will certainly book with you again and recommend you to others.</p>
+              <div class="review-stars">★★★★★</div>
+              <div class="reviewer">— Christina</div>
+            </div>
+          </div>
 
-  <section id="reviews" class="reviews-container">
-    <h2>Customer Reviews</h2>
-    <div class="review">
-      <h3>"Everything was perfect. "</h3>
-      <p>
- We had a lovely time with Claire & Marc. Both meals were excellent with some of the best food we have had for ages.
-The weather wasn't helpful, snow and flooding but they arrived on time and left everything perfect. 
-Thank you again for an excellent experience!
-</p>
-      <div class="rating">⭐⭐⭐⭐⭐ - Lindsay</div>
-    </div>
-    <div class="review">
-      <h3>"Bespoke Services"</h3>
-      <p>
-Claire and Marc were great. They came 2 hours before, cooked a lovely meal and without being asked did Alfie our dog a chicken dinner.They washed up and cleared away .We did nothing but enjoy ourselves.</p>
-      <div class="rating">⭐⭐⭐⭐⭐ - Google review</div>
-    </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review-card">
+              <div class="quote-mark">"</div>
+              <h3>Dream Team</h3>
+              <p>Claire, Mark and Terry were absolutely amazing, we had the most delicious food, we were incredibly well looked after. Will definitely be thinking of you again in the future.</p>
+              <div class="review-stars">★★★★★</div>
+              <div class="reviewer">— Georgia</div>
+            </div>
+          </div>
 
-        <div class="review">
-      <h3>"Helpful, Professional and Efficient."</h3>
-      <p>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review-card">
+              <div class="quote-mark">"</div>
+              <h3>Highlight of the Day</h3>
+              <p>Just a final big thank you to the chefs for last night! They were a complete hit and the food was delicious, really made the evening.</p>
+              <div class="review-stars">★★★★★</div>
+              <div class="reviewer">— Lucie</div>
+            </div>
+          </div>
 
-Claire and Marc were terrific! The food was delicious and they were so helpful, professional and efficient. I have never seen the kitchen so clean! I filled in a feedback form on the Luxury Private Chef website. We all had a lovely time, thank you very much. Will certainly book with you again if we have another at home family party and recommend you to others.
-Thank you again, I definitely made the right choice on the website!
-</p>
-      <div class="rating">⭐⭐⭐⭐⭐ - Christina</div>
-    </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review-card">
+              <div class="quote-mark">"</div>
+              <h3>So good we've had it 3 times!!!</h3>
+              <p>The process went very smoothly from joint planning the delicious menus to the preparing, serving and clearing up afterwards. Discreet, easy to work with and very obliging for dietary requirements — vegetarians, pescatarians, fish allergy and lactose intolerant. Nothing was too much trouble. We can't recommend them highly enough!</p>
+              <div class="review-stars">★★★★★</div>
+              <div class="reviewer">— Sheila & Bendt</div>
+            </div>
+          </div>
 
-        <div class="review">
-      <h3>"Dream Team"</h3>
-      <p>
-Claire, Mark and Terry were absolutely amazing, we had the most delicious food, we were incredibly well looked after.
-will definitely be thinking of you again in the future.
-</p>
-      <div class="rating">⭐⭐⭐⭐⭐ - Georgia</div>
-    </div>
-
-        <div class="review">
-      <h3>"Highlight of the Day"</h3>
-      <p>
-Just a final big thank you to the chefs for last night! They were a complete hit and the food was delicious, really made the evening.
-</p>
-      <div class="rating">⭐⭐⭐⭐⭐ - Lucie</div>
+        </div>
+      </section>
     </div>
 
-    <div class="review">
-      <h3>"So good we've had it 3 times!!!"</h3>
-      <p>
-Claire & Marc have organised lovely lunch / dinner parties for us.
-The process went very smoothly from joint planning the delicious menus to the preparing, serving and clearing up afterwards. 
-The food was perfectly cooked, professionally presented as Master Chefs do!
-They were discreet, easy to work with and very obliging, particurlaly for the dietary requirements we had.
-vegetarians, pescatarians, fish allergy and lactose intolerant ... Nothing was too much trouble for them. 
-We can't recommend them highly enough for any event you might have in mind.
-Looking forward to our next celebration!
+    <!-- CTA -->
+    <section class="reviews-cta">
+      <div class="container">
+        <h3>Ready for your own experience?</h3>
+        <p>Get in touch and let us craft something unforgettable for you.</p>
+        <a href="./contact.html" class="btn btn-gold btn-lg">Enquire Now</a>
+      </div>
+    </section>
 
-</p>
-      <div class="rating">⭐⭐⭐⭐⭐ - Sheila & Bendt</div>
-    </div>
-    <!-- Add more reviews here -->
+    <section id="footer">
+      <div id="footer-placeholder"></div>
+    </section>
 
-  </section>
-
-  <section id="footer">
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-        <p class="col-md-4 mb-0">© Claire and Marc Private Dining</p>
-    
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-    
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="./index.html" class="nav-link px-2 ">Home</a></li>
-          <li class="nav-item"><a href="#menus" class="nav-link px-2 ">Services</a></li>
-          <li class="nav-item"><a href="./ourstory.html" class="nav-link px-2 ">About</a></li>
-          <li class="nav-item"><a href="./reviews.html" class="nav-link px-2 ">Reviews</a></li>         
-        </ul>
-      </footer>
-    </div>
-  </section>
-
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-  crossorigin="anonymous"
-></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/components.js"></script>
+  </body>
 </html>

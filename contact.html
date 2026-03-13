@@ -3,25 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-
+    <title>Contact - Claire & Marc Private Dining</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/mainstyling.css" />
-    <link rel="stylesheet" href="./styles/contact.css" />
     <style>
       .eb-garamond-font {
         font-family: "EB Garamond", serif;
@@ -29,245 +17,252 @@
         font-weight: 500;
         font-style: normal;
       }
+
+      /* ── Hero ── */
+      .contact-hero {
+        background-color: #095d40;
+        padding: 5rem 1.5rem 3.5rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(238, 186, 43, 0.3);
+      }
+      .contact-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #eeba2b;
+        margin-bottom: 1rem;
+      }
+      .contact-hero p {
+        font-size: 1.2rem;
+        color: #eeba2b;
+        opacity: 0.85;
+        font-style: italic;
+        max-width: 560px;
+        margin: 0 auto;
+      }
+      .gold-divider {
+        width: 80px;
+        height: 2px;
+        background-color: #eeba2b;
+        margin: 1.5rem auto;
+        opacity: 0.6;
+      }
+
+      /* ── Layout ── */
+      .contact-body {
+        padding: 4rem 1.5rem;
+      }
+
+      /* ── Info panel ── */
+      .contact-info-panel {
+        background-color: #095d40;
+        border: 1px solid rgba(238, 186, 43, 0.35);
+        border-radius: 12px;
+        padding: 2.5rem;
+        height: 100%;
+      }
+      .contact-info-panel h2 {
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: #eeba2b;
+        margin-bottom: 0.5rem;
+      }
+      .contact-info-panel .sign-off {
+        font-size: 1.05rem;
+        color: #eeba2b;
+        opacity: 0.8;
+        font-style: italic;
+        margin-bottom: 2rem;
+      }
+      .contact-info-panel .gold-divider {
+        margin: 1.5rem 0;
+      }
+
+      .contact-link-row {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        margin-bottom: 1.25rem;
+        color: #eeba2b;
+        font-size: 1.05rem;
+      }
+      .contact-link-row svg {
+        flex-shrink: 0;
+        color: #eeba2b;
+      }
+      .contact-link-row a {
+        color: #eeba2b;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .contact-link-row a:hover { opacity: 0.75; }
+
+      /* ── Form panel ── */
+      .contact-form-panel {
+        background-color: #095d40;
+        border: 1px solid rgba(238, 186, 43, 0.35);
+        border-radius: 12px;
+        padding: 2.5rem;
+        height: 100%;
+      }
+      .contact-form-panel h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #eeba2b;
+        margin-bottom: 0.25rem;
+      }
+      .contact-form-panel .form-subtitle {
+        font-size: 1rem;
+        color: #eeba2b;
+        opacity: 0.7;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+      }
+      .form-gold-divider {
+        border-color: rgba(238,186,43,0.25);
+        margin-bottom: 1.75rem;
+      }
+
+      .form-label {
+        color: #eeba2b;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 0.35rem;
+        display: block;
+      }
+      .form-control-gold {
+        width: 100%;
+        background-color: rgba(255,255,255,0.06);
+        border: 1px solid rgba(238,186,43,0.4);
+        border-radius: 6px;
+        color: #eeba2b;
+        padding: 0.6rem 0.85rem;
+        font-size: 1rem;
+        font-family: "EB Garamond", serif;
+        margin-bottom: 1.1rem;
+        transition: border-color 0.2s ease;
+      }
+      .form-control-gold::placeholder { color: rgba(238,186,43,0.4); }
+      .form-control-gold:focus {
+        outline: none;
+        border-color: #eeba2b;
+        background-color: rgba(255,255,255,0.09);
+      }
+      textarea.form-control-gold {
+        height: 130px;
+        resize: vertical;
+      }
+
+      .btn-gold {
+        background-color: #eeba2b;
+        color: #095d40;
+        border: 2px solid #eeba2b;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 0.65rem 2rem;
+        font-size: 1.05rem;
+        font-family: "EB Garamond", serif;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+      }
+      .btn-gold:hover {
+        background-color: transparent;
+        color: #eeba2b;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(238,186,43,0.35);
+      }
     </style>
   </head>
 
   <body class="eb-garamond-font">
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"
-            ><img src="./icons/chef-hat-simple.svg" /> Claire & Marc Private
-            Dining</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="./ourstory.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./reviews.html">Reviews</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./breakfast.html"
-                      >Breakfast</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./casualdining.html"
-                      >Casual Dining / Lunch</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./sharingforthetable.html"
-                      >Sharing for the Table</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./finedining.html"
-                      >Fine Dining</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./tastingmenu.html"
-                      >Tasting Menus</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="./contact.html"
-                      >Bespoke requests</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
+    <header id="nav-placeholder"></header>
 
-            <div class="header-contact-icons">
-              <a
-                href="./contact.html"
-                class="nav-link btn btn-outline-secondary"
-              >
-                Contact
-              </a>
+    <!-- Body -->
+    <div class="contact-body">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
 
-              <a href="https://www.instagram.com/claireandmarcprivatedining/"
-                ><img src="./icons/instagram.svg" alt="instagram icon"
-              /></a>
+          <!-- Info panel -->
+          <div class="col-12 col-lg-5">
+            <div class="contact-info-panel">
+              <h2>Contact Us</h2>
+              <p class="sign-off">Thank you for your interest in our private dining events. Please feel free to reach out with any enquiries — we will get back to you as soon as possible.<br><br>Kindest regards,<br><em>Claire and Marc Lara</em></p>
 
-              <a href="mailto:claire.chef@gmail.com"
-                ><img
-                  src="./icons/mail-envelope.svg"
-                  alt="mailenvelope icon"
-                  style="height: 28px"
-              /></a>
+              <div class="gold-divider"></div>
+
+              <div class="contact-link-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+                <span><a href="mailto:claire.chef@gmail.com">claire.chef@gmail.com</a></span>
+              </div>
+
+              <div class="contact-link-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+                <span><a href="https://www.instagram.com/claireandmarcprivatedining/" target="_blank" rel="noopener noreferrer">@claireandmarcprivatedining</a></span>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
 
-    <div class="contact-container">
-      <div id="contact-info-container">
-        <h2>Contact Us</h2>
-        <p>
-          Thank you for your interest in our private dining events. Please feel
-          free to contact us with any enquiries, and we will get back to you as
-          soon as possible.
-        </p>
+          <!-- Form panel -->
+          <div class="col-12 col-lg-7">
+            <div class="contact-form-panel">
+              <h3>Enquire for a private dining event</h3>
+              <p class="form-subtitle">We'd love to hear about your occasion and craft something truly special for you</p>
+              <hr class="form-gold-divider" />
 
-        <p>Kindest regards,</p>
-        <p>Claire and Marc Lara</p>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5cb6d182-7087-455c-931f-27218845927d" />
 
-        <div class="links-container">
-          <div class="contact-row">
-            <img
-              src="./icons/mail-envelope.svg"
-              alt="mailenvelope icon"
-              style="height: 28px"
-            />
-            Send us an email at:
-            <a href="mailto:claire.chef@gmail.com"> claire.chef@gmail.com</a>
+                <div class="row g-3">
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label">Name</label>
+                    <input type="text" name="name" placeholder="Your name" required class="form-control-gold" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" placeholder="Your email" required class="form-control-gold" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label">Date of Event</label>
+                    <input type="date" name="date of event" class="form-control-gold" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label">Number of Guests</label>
+                    <input type="number" placeholder="e.g. 8" name="number of guests" required class="form-control-gold" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Location</label>
+                    <input type="text" name="location" placeholder="Address & postcode" required class="form-control-gold" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea name="message" placeholder="Tell us about your occasion, any dietary requirements or allergies..." required class="form-control-gold"></textarea>
+                  </div>
+                </div>
+
+                <input type="checkbox" name="botcheck" style="display:none" />
+                <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+
+                <button type="submit" class="btn-gold mt-2">Send Enquiry</button>
+              </form>
+            </div>
           </div>
 
-          <div class="contact-row">
-            <img
-              src="./icons/instagram.svg"
-              alt="instagram icon"
-              style="height: 24px"
-            />
-            Visit our instagram page:
-            <a href="https://www.instagram.com/claireandmarcprivatedining/"
-              >claireandmarcprivatedining</a
-            >
-          </div>
         </div>
-      </div>
-
-      <div id="form-container">
-        <h3>Enquire for a private dining event.</h3>
-        <hr />
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <!-- Replace with your Access Key -->
-          <input
-            type="hidden"
-            name="access_key"
-            value="5cb6d182-7087-455c-931f-27218845927d"
-          />
-
-          <!-- Form Inputs. Each input must have a name="" attribute -->
-          <h4>Name</h4>
-          <input type="text" name="name" placeholder="name" required />
-          <h4>Email</h4>
-          <input type="email" name="email" placeholder="email" required />
-
-          <h4>Date of event</h4>
-          <input type="date" name="date of event" />
-
-          <h4>Number of guests</h4>
-          <input
-            type="number"
-            placeholder="4"
-            name="number of guests"
-            required
-          />
-
-          <h4>Location</h4>
-          <input
-            type="text"
-            name="location"
-            placeholder="*include your postcode"
-            required
-          />
-
-          <h4>Message</h4>
-          <textarea
-            name="message"
-            placeholder="Feel free to mention any allergies or food preferences."
-            required
-          ></textarea>
-
-          <!-- Honeypot Spam Protection -->
-          <input
-            type="checkbox"
-            name="botcheck"
-            class="hidden"
-            style="display: none"
-          />
-
-          <!-- Custom Confirmation / Success Page -->
-          <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-
-          <input
-            type="hidden"
-            name="redirect"
-            value="https://web3forms.com/success"
-          />
-          <button type="submit" id="form-submit-btn">Submit Form</button>
-        </form>
       </div>
     </div>
 
     <section id="footer">
-      <div class="container">
-        <footer
-          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
-        >
-          <p class="col-md-4 mb-0">© Claire and Marc Private Dining</p>
-
-          <a
-            href="/"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          >
-            <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link px-2">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#menus" class="nav-link px-2">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="./ourstory.html" class="nav-link px-2">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="./reviews.html" class="nav-link px-2">Reviews</a>
-            </li>
-          </ul>
-        </footer>
-      </div>
+      <div id="footer-placeholder"></div>
     </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/components.js"></script>
   </body>
 </html>
